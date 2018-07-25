@@ -1,20 +1,4 @@
-
-/*$(document).ready(function() {
-
-  $('#kitty').onfocus(function() {
-
-  var count;
-
-    if (count == undefined || count == "" || count == 0) {
-    var count = 0;
-    }
-
-    count++;
-    $('#counter1').html("Image Views: " + count);
-  }
-});*/
-
-    $('#counter1').data('count', 0);
+ $('#counter1').data('count', 0);
     $('#kitty').click(function() {
         $('#counter1').html(function() {
             var $this = $(this),
