@@ -1,0 +1,71 @@
+
+body{
+	background: seashell;
+}
+
+img {
+
+    display:none;
+    height: 200px;
+    width: 200px;
+
+}
+
+figure {
+	display: none;
+
+}
+
+.figures {
+	position: relative;
+    left: 480px;
+    bottom: 200px;
+
+}
+
+#counter1{
+	display: block;
+	color: steelblue;
+	font-size: 2em;
+}
+#counter2{
+	display: block;
+	color: steelblue;
+	font-size: 2em;
+}
+#counter3{
+	display: block;
+	color: steelblue;
+	font-size: 2em;
+}
+#counter4{
+	display: block;
+	color: steelblue;
+	font-size: 2em;
+}
+#counter5{
+	display: block;
+	color: steelblue;
+	font-size: 2em;
+}
+li {
+
+    margin: 10px 0;
+
+    cursor: pointer;
+
+    background-color:orange;
+
+    padding: 5px;
+
+    max-width:100px;
+
+}
+
+ h2, h3 {
+	color: steelblue;
+}
+
+h1{
+	color: orange;
+}
