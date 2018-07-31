@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ger's Cat Clicker Premium Pro App</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+<div class= 'container'>
+    <div class= 'header'>
+        <h1>Cat Clicker!</h1>
+            <p>Click on the cat's name to display the cat's picture.</p>
+            <p>Click on the cat's picture to "Like" the cat!</p>
+    </div>
+
+    <div class= 'catContainer'>
+    <div class= 'catNames'>
+        <h2>List of Cats</h2>
+            <li id= 'names'></li>
+<br>
+        <button id='adminButton'>Admin</button>
+
+    <div id= 'admin'>
+        <form id= 'adminForm'>
+            <p>Cat Name:  <input type= 'text' class= 'adminInput' id= 'adminCatName'></p>
+            <p>Img Url:   <input type= 'text' class= 'adminCatUrl' id= 'adminCatURL'></p>
+            <p>Clicks:  <input type= 'number' class= 'adminCatClicks' id= 'adminCatClicks'></p>
+        </form>
+            <button id= 'adminCancel'>Cancel</button>
+            <button id= 'adminSave'>Save</button>
+    </div>
+    </div>
+
+    <div class= 'catDisplay'>
+        <h2 id= 'catName'></h2>
+            <img src='' id='catImage' alt="cute cat">
+            <p id= 'displayClicks'></p>
+    </div>
+
+
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
