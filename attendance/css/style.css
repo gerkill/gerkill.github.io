@@ -1,0 +1,69 @@
+/*body {
+    line-height: 1.6;
+    margin: 2em;
+}
+
+th {
+    background-color: #001f3f;
+    color: #fff;
+    padding: 0.5em 1em;
+}
+
+td {
+    border-top: 1px solid #eee;
+    padding: 0.5em 1em;
+}
+
+input {
+    cursor: pointer;
+}
+
+/* Column types */
+th.missed-col {
+    background-color: #f00;
+}
+
+td.missed-col {
+    background-color: pink;
+    color: #f00;
+    text-align: center;
+}
+
+td.name{
+    font-weight: bold;
+    color: darkblue;
+
+}
+.name-col {
+    text-align: left;
+    font-weight: bold;
+}
+
+body{
+    background-color: lightblue;
+}
+
+h1{
+    color: limegreen;
+    text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+table caption {
+    padding: .5em 0;
+}
+
+@media screen and (max-width: 767px) {
+  table caption {
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+.p {
+  text-align: center;
+  padding-top: 140px;
+  font-size: 14px;
+}
