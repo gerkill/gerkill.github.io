@@ -18,11 +18,11 @@ const filesToCache = [
   '/img/8.jpg',
   '/img/9.jpg',
   '/img/10.jpg',
-  '/public/css/styles.min.css',
-  '/public/css/responsive.min.css',
-  '/public/js/dbhelper.min.js',
-  '/public/js/main.min.js',
-  '/public/js/restaurant_info.min.js',
+  '/css/styles.css',
+  '/css/responsive.css',
+  '/js/dbhelper.js',
+  '/js/main.js',
+  '/js/restaurant_info.js',
 ];
 
 /**
