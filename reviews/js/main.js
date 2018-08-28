@@ -5,7 +5,7 @@ let map;
 window.markers = [];
 
 /**
- * Fetch neighborhoods and cuisines as soon as the page is loaded.
+ * Fetch neighborhoods and cuisines when the page is loaded.
  */
 document.addEventListener('DOMContentLoaded', event => {
   fetchNeighborhoods();
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', event => {
 });
 
 /**
- * Fetch all neighborhoods and set their HTML.
+ * Fetch all the neighborhoods and set their HTML.
  */
 fetchNeighborhoods = () => {
   DBHelper.fetchNeighborhoods((error, neighborhoods) => {
@@ -28,7 +28,7 @@ fetchNeighborhoods = () => {
 };
 
 /**
- * Set neighborhoods HTML.
+ * Set neighborhoods' HTML.
  */
 fillNeighborhoodsHTML = (neighborhoods = self.neighborhoods) => {
   const select = document.getElementById('neighborhoods-select');
@@ -70,7 +70,7 @@ fillCuisinesHTML = (cuisines = self.cuisines) => {
 };
 
 /**
- * Initialize Google map, called from HTML.
+ * Initialize Google maps, called from HTML.
  */
 window.initMap = () => {
   const loc = {
@@ -103,7 +103,6 @@ updateRestaurants = () => {
     neighborhood,
     (error, restaurants) => {
       if (error) {
-        // Got an error!
         console.error(error);
       } else {
         resetRestaurants(restaurants);
@@ -114,10 +113,10 @@ updateRestaurants = () => {
 };
 
 /**
- * Clear current restaurants, their HTML and remove their map markers.
+ * Clear current restaurants, their HTML, and remove their map markers.
  */
 resetRestaurants = restaurants => {
-  // Remove all restaurants
+  // Removes all restaurants
   self.restaurants = [];
   const ul = document.getElementById('restaurants-list');
   ul.innerHTML = '';
@@ -129,7 +128,7 @@ resetRestaurants = restaurants => {
 };
 
 /**
- * Create all restaurants HTML and add them to the webpage.
+ * Create all restaurants HTML and add them to the page.
  */
 fillRestaurantsHTML = (restaurants = self.restaurants) => {
   const ul = document.getElementById('restaurants-list');
@@ -186,7 +185,7 @@ addMarkersToMap = (restaurants = self.restaurants) => {
 };
 
 /**
- * Register SW Worker
+ * Registering the Service Worker
  */
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./sw.js').then(() => {
