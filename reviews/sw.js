@@ -1,10 +1,6 @@
-/**
- * Cache details
- */
-const cacheName = 'restaurant_reviews_1';
+const cacheName = 'restaurant_reviews';
 
 const filesToCache = [
-  '/',
   '/index.html',
   '/restaurant.html',
   '/data/restaurants.json',
@@ -19,27 +15,26 @@ const filesToCache = [
   '/img/9.jpg',
   '/img/10.jpg',
   '/css/styles.css',
-  '/css/responsive.css',
   '/js/dbhelper.js',
   '/js/main.js',
   '/js/restaurant_info.js',
 ];
 
 /**
- * Create cache when SW installs
+ * Creates cache when the Service Worker installs
  */
 self.addEventListener('install', event => {
   console.log('[ServiceWorker] Install');
   event.waitUntil(
     caches.open(cacheName).then(cache => {
-      console.log('[ServiceWorker] Caching app shell');
+      console.log('[ServiceWorker] Caching app');
       return cache.addAll(filesToCache);
     }),
   );
 });
 
 /**
- *  Purge previous cache after activating the next cache
+ *  Purges the previous cache after activating the next cache
  */
 self.addEventListener('activate', event => {
   console.log('[ServiceWorker] Activate');
@@ -57,10 +52,9 @@ self.addEventListener('activate', event => {
 });
 
 /**
- * Respond with cached content if they are matched
+ * Responds with cached content if matched
  */
 self.addEventListener('fetch', event => {
-  // Handle query string on /restaurant url
   const request = event.request.url.includes('/restaurant.html')
     ? new Request('/restaurant.html')
     : event.request;
