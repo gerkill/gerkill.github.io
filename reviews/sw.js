@@ -1,6 +1,7 @@
 const cacheName = 'restaurant_reviews';
 
 const filesToCache = [
+  '/',
   '/index.html',
   '/restaurant.html',
   '/data/restaurants.json',
