@@ -3,7 +3,7 @@
 <head>
 
 
-	<link rel="stylesheet" href="cats/style.css">
+	<link rel="stylesheet" href="cats/pro/style.css">
 
 <title>Cat Clicker</title>
 
@@ -24,27 +24,27 @@
 
 <div class= "figures">
 
-	<figure><div id='kitty'><img src="/cats/images/cutecat.jpg">
+	<figure><div id='kitty'><img src="/cats/pro/images/cutecat.jpg">
 
 	<div id='counter1'>0</div></div>
 	<figcaption><h3>People like</h3><h1> Kitty</h1></figcaption></figure>
 
-    <figure><div id='katty'><img src="cats/images/cutecat2.jpg">
+    <figure><div id='katty'><img src="cats/pro/images/cutecat2.jpg">
 
 	<div id='counter2'>0</div></div>
 	<figcaption><h3>People like</h3><h1>Katty</h1></figcaption></figure>
 
-    <figure><div id='yowler'><img src="cats/images/cutecat3.jpg">
+    <figure><div id='yowler'><img src="cats/pro/images/cutecat3.jpg">
 
 	<div id='counter3'>0</div></div>
 	<figcaption><h3>People like</h3><h1>Yowler</h1></figcaption></figure>
 
-    <figure><div id='smirker'><img src="cats/images/cutecat4.jpg">
+    <figure><div id='smirker'><img src="cats/pro/images/cutecat4.jpg">
 
 	<div id='counter4'>0</div></div>
 	<figcaption><h3>People like</h3><h1>Smirker</h1></figcaption></figure>
 
-    <figure><div id='snatcher'><img src="cats/images/cutecat5.jpg">
+    <figure><div id='snatcher'><img src="cats/pro/images/cutecat5.jpg">
 
 	<div id='counter5'>0</div></div>
 	<figcaption><h3>People like</h3><h1>Snatcher</h1></figcaption></figure>
@@ -54,7 +54,7 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="cats/app.js"></script>
-	<script src="cats/counter.js"></script>
+	<script src="cats/pro/app.js"></script>
+	<script src="cats/pro/counter.js"></script>
  </body>
  </html>
