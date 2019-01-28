@@ -1,0 +1,208 @@
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #232323;
+}
+
+body.AR-container {
+  margin : 0px;
+  overflow: hidden;
+  background-color: none;
+}
+@media not all and (min-resolution:.001dpcm) { @media {
+  #sounds {
+    font-family: sans-serif,monospace;
+    font-size: 13px;
+    width: 100%;
+    font-weight: 200;
+    line-height: 16px;
+    position: absolute;
+    left: 20px;
+    bottom: 22px;
+  }
+
+  #sounds .start-button {
+    background: url(../images/sound-off.png) 50% 50%/70% 70% no-repeat rgba(0,0,0,.35);
+    border: 0;
+    bottom: 0;
+    cursor: pointer;
+    min-width: 20px;
+    min-height: 15px;
+    padding-right: 3%;
+    padding-top: 3%;
+    position: absolute;
+    left: 0px;
+    transition: background-color .05s ease;
+    -webkit-transition: background-color .05s ease;
+    z-index: 9999;
+  }
+
+  #sounds .start-button:hover {
+    background-color: #666;
+  }
+
+  #sounds .stop-button {
+    background: url(../images/sound-on.png) 50% 50%/70% 70% no-repeat rgba(0,0,0,.35);
+    display:none;
+    border: 0;
+    bottom: 0;
+    cursor: pointer;
+    min-width: 20px;
+    min-height: 15px;
+    padding-right: 3%;
+    padding-top: 3%;
+    position: absolute;
+    left: 0px;
+    transition: background-color .05s ease;
+    -webkit-transition: background-color .05s ease;
+    z-index: 9999;
+  }
+
+  #sounds .stop-button:hover {
+    background-color: #666;
+  }
+
+  }}
+
+#splash {
+  position: fixed;
+  z-index: 99999;
+
+  opacity: 1;
+  visibility: visible;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+
+  font-size: 12px;
+  font-family: sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+
+  background-color: rgba(0, 0, 0, 1);
+  transition: all 4s;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#splash .logo {
+  background-image: url("../loader/gallery6_load.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 150px;
+  height: 66px;
+  opacity: 1;
+  visibility: visible;
+}
+
+#splash .loading {
+  opacity: 1;
+  visibility: visible;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 0.50em solid rgba(255, 255, 255, 0.2);
+  border-top-color: #FA7268;
+  border-right-color: #FA7268;
+  border-bottom-color: #FA7268;
+  animation: spin 1s infinite linear;
+}
+
+#splash .start-button {
+  padding: 10px 30px;
+  border-radius: 3px;
+  opacity: 0;
+  transition: opacity .5s ease;
+  cursor: pointer;
+  background-color: #292929;
+  letter-spacing: 1px;
+}
+
+#splash .credits {
+  position: absolute;
+  left: 2em;
+  bottom: 2em;
+
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+}
+
+#splash .credits .show-credits {
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+
+#splash .credits ul {
+  display: none;
+  max-height: 200px;
+  list-style: none;
+  margin-top: 1em;
+  line-height: 1.5;
+  padding: 0;
+  overflow-y: scroll;
+  text-transform: capitalize;
+}
+
+#splash .credits a {
+  color: #a2a2a2;
+  text-decoration: none;
+}
+
+#splash .credits a:visited {
+  color: #a2a2a2;
+}
+
+#splash .credits a:hover, #splash .credits a:visited:hover {
+  color: #ccc;
+}
+
+#anchor-scene-button {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  background-color: rgba(255, 255, 266, 0.8);
+  background-image: url('rotate-anchor.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 60%;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+#rotate-scene-button {
+  display: none;
+  position: fixed;
+  top: 90px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  background-color: rgba(255, 255, 266, 0.8);
+  background-image: url('rotate-y.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 60%;
+  border-radius: 3px;
+  z-index: 1;
+}
